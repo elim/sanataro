@@ -4,7 +4,7 @@
 ありがとうございます。
 下記のURLにアクセスいただくことにより、ユーザ登録処理が完了します。
 
-<%= url_for(only_path: false, controller: :login, action: :confirmation, login: @user.login, sid: @user.confirmation) %>
+<%= url_for(only_path: false, controller: :login, action: :confirmation, login: @user.login, sid: @user.confirmation).html_safe %>
 
 是非、「<%= Settings.product_name %>」をご活用ください。
 
